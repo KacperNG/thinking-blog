@@ -1,0 +1,14 @@
+$primary-color: red;
+
+%color-shared{
+    color:$primary-color;
+}
+
+.container {
+    background-color: rgb(0, 0, 0);
+    .logo {
+        .logo2 {
+            @extend %color-shared;
+        }
+    }
+}
