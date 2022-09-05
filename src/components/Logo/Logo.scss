@@ -7,8 +7,9 @@ $primary-color: red;
 .container {
     background-color: rgb(0, 0, 0);
     .logo {
-        .logo2 {
             @extend %color-shared;
-        }
     }
+    .logo2 {
+        @extend %color-shared;
+}   
 }
