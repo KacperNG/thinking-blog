@@ -1,3 +1,36 @@
-.test {
-    color: red;
+.banner {
+    background-image: url("https://cdn.simplesite.com/i/c3/6a/286541532601871043/i286541539360734134._szw2560h1600_.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 100vh;
+    width: 100%;
 }
+
+.banner_info {
+    margin-top: 350px;
+    padding: 10px;
+    color: #fff;
+    width: 343px;
+    height: 150px;
+    background-color: #1b1b1b;
+    margin-left: 120px;
+
+    .heading_text {
+        font-size: 20px;
+        font-weight: 900;
+    }
+}
+
+$breakpoint-mobile: 800px;
+
+@media only screen and (max-width: $breakpoint-mobile) {
+    .banner {
+        height: 50vh;
+    }
+
+    .banner_info {
+        margin-top: 350px;
+        margin-left: 65px;
+    }
+  }
